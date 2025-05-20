@@ -1,0 +1,16 @@
+name: Mensagem Workflow Reutilizável
+
+on:
+  workflow_call:
+    inputs:
+      username:
+        description: 'Nome do usuário para a mensagem'
+        required: true
+        type: string
+
+jobs:
+  exemplo-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print mensagem
+        run: echo "Bem vindo(a), ${{ inputs.username }}!"
