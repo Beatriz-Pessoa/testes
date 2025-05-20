@@ -1,0 +1,13 @@
+name: Executar Mensagem Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  chamar-workflow:
+    uses: ./.github/workflows/mensagem.yml
+    with:
+      username: 'Beatriz Silva'
+      
