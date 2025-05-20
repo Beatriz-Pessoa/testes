@@ -9,5 +9,5 @@ jobs:
   chamar-workflow:
     uses: ./.github/workflows/mensagem.yml
     with:
-      username: 'Beatriz Silva'
+      username: 'Beatriz Tavares'
       
